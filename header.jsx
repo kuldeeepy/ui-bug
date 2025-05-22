@@ -3,21 +3,21 @@ import { useState } from 'react'
 
 const solutions = [
   {
-    title: "Customer Support",
+    title: "jansdksnd Support",
     description:
       "24/7 AI-augmented agents deliver fast, empathetic support across every channel.",
 
     link: "/hire",
   },
   {
-    title: "Rep Assisted Sales",
+    title: "Resdsp adaaleasdas",
     description:
-      "Live reps, guided by AI insights, drive high-value purchases in real time.",
+      "Live repsads, guided by I insights, drive high-value purchases in real time.",
 
     link: "/hire",
   },
   {
-    title: "Checkout Recovery",
+    title: "as sdad",
     description:
       "AI-powered nudges to recover abandoned carts and convert lost checkouts into revenue.",
 
@@ -27,38 +27,38 @@ const solutions = [
 
 const products = [
   {
-    title: "Co Pilot",
+    title: "o as",
     description:
-      "Your AI teammate that learns, assists, and evolves with effortless training",
-    image: "/copilot.png",
-    link: "/copilot",
+      "Your sdAI teammate that learns, assists, and evolves with effortless training",
+    image: "/as.png",
+    link: "/asd",
   },
   {
     title: "Pulse",
     description:
       "Track agent's performance with AI-driven analysis and leaderboards.",
-    image: "/pulse.png",
-    link: "/pulse",
+    image: "/asd.png",
+    link: "/dasd",
   },
   {
-    title: "HelpDesk",
+    title: "sdsa",
     description:
       "Bring all your customer queries into one place, with seamless multi-channel integration.",
-    image: "/helpdesk.png",
-    link: "/helpdesk",
+    image: "/sd.png",
+    link: "/sd",
   },
   {
-    title: "Live Chat",
+    title: "Lsdat",
     description:
-      "Your AI-powered chatbot that instantly answers FAQs and engages with customers in real-time.",
-    image: "/live-chat.png",
-    link: "/live-chat",
+      "Your AI-pfeowered cefhatbot that instantly answers FAQs and engages with customers in real-time.",
+    image: "/ldhat.png",
+    link: "/lifdchat",
   },
   {
-    title: "Time Diary",
+    title: "Tf
     description: "Tracks and optimizes your agents' productivity in real-time.",
-    image: "/time-diary.png",
-    link: "/time-diary",
+    image: "/timeefeary.png",
+    link: "/timefry",
   },
 ];
 
@@ -163,8 +163,8 @@ const Header = () => {
             className="flex items-center cursor-pointer"
         
           >
-            <img src="/kim-logo.svg" width={40} height={40} alt="Logo" />
-            <div className="text-2xl text-blackThirty font-semibold">kim</div>
+            <img src="/weflogo.svg" width={40} height={40} alt="Logo" />
+            <div className="text-2xl text-blackThirty font-semibold">wefe</div>
           </div>
           <nav className="hidden md:flex items-center justify-between flex-1 text-sm font-semibold font-inter h-[1.625rem] text-blackFourty">
             <div className="flex-1" />
@@ -259,7 +259,7 @@ const Header = () => {
                           <div className="hover:bg-greyTen rounded-2xl p-2 hover:shadow-sm flex flex-col gap-4 max-h-64 max-w-[230px] cursor-pointer">
                             <div className="bg-gray-100 rounded-xl overflow-hidden h-full">
                               <img
-                                src="/pulse.png"
+                                src="/wef.png"
                                 alt="Blog"
                                 width={210}
                                 height={172}
@@ -279,7 +279,7 @@ const Header = () => {
                           <div className="hover:bg-greyTen rounded-2xl p-2 hover:shadow-sm flex flex-col gap-4 max-h-64 max-w-[230px] cursor-pointer">
                             <div className="bg-gray-100 rounded-xl overflow-hidden h-full">
                               <img
-                                src="/copilot.png"
+                                src="/wfwf.png"
                                 alt="Blog"
                                 width={210}
                                 height={172}
