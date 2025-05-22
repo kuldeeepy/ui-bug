@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react'
+import React from "react";
+import { useState } from "react";
 
 const solutions = [
   {
@@ -55,7 +55,7 @@ const products = [
     link: "/lifdchat",
   },
   {
-    title: "Tf
+    title: "Tf",
     description: "Tracks and optimizes your agents' productivity in real-time.",
     image: "/timeefeary.png",
     link: "/timefry",
@@ -85,41 +85,26 @@ const ResourceBtn = ({ title, idx, onMouseEnter, onMouseLeave }) => {
       onMouseLeave={onMouseLeave}
     >
       {title}
-
     </button>
   );
 };
 
-const ProductCard = ({  
-  title,
-  description,
-  image,
-}) => {
+const ProductCard = ({ title, description, image }) => {
   return (
-    <div 
-
-      className="flex flex-col gap-3 text-blackFifty cursor-pointer w-[200px] hover:bg-greyTen hover:shadow-sm p-3 rounded-xl transition-all duration-200"
-
-    >
+    <div className="flex flex-col gap-3 text-blackFifty cursor-pointer w-[200px] hover:bg-greyTen hover:shadow-sm p-3 rounded-xl transition-all duration-200">
       <div className="relative w-ful h-[120px] rounded-lg overflow-hidden border border-greyFifty">
-        <img 
-          src={image} 
-          alt={title} 
-          fill
-          className="object-cover rounded-lg"
-        />
+        <img src={image} alt={title} fill className="object-cover rounded-lg" />
       </div>
       <div className="space-y-1">
-       <div className="flex items-center justify-between">
-        <h3 className="text-base font-medium">{title}</h3>
-        {/* {isHovered && <MoveRight className="w-4 h-4" />} */}
-       </div>
+        <div className="flex items-center justify-between">
+          <h3 className="text-base font-medium">{title}</h3>
+          {/* {isHovered && <MoveRight className="w-4 h-4" />} */}
+        </div>
         <p className="text-xs leading-tight">{description}</p>
       </div>
     </div>
   );
 };
-
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -157,12 +142,9 @@ const Header = () => {
 
   return (
     <div>
-       <header className="fixed w-[96%] left-1/2 -translate-x-1/2 md:max-w-3xl lg:max-w-6xl mt-4 rounded-2xl bg-white/80 backdrop-blur-lg border border-greyThirty shadow-sm h-14 pl-3 pr-[0.675rem] z-50">
+      <header className="fixed w-[96%] left-1/2 -translate-x-1/2 md:max-w-3xl lg:max-w-6xl mt-4 rounded-2xl bg-white/80 backdrop-blur-lg border border-greyThirty shadow-sm h-14 pl-3 pr-[0.675rem] z-50">
         <div className="flex justify-between items-center text-sm h-full w-full">
-          <div
-            className="flex items-center cursor-pointer"
-        
-          >
+          <div className="flex items-center cursor-pointer">
             <img src="/weflogo.svg" width={40} height={40} alt="Logo" />
             <div className="text-2xl text-blackThirty font-semibold">wefe</div>
           </div>
@@ -173,11 +155,8 @@ const Header = () => {
                 onMouseEnter={() => handleDropdownEnter("solutions")}
                 onMouseLeave={handleDropdownLeave}
               >
-                <button
-                  className='flex items-center gap-1 py-2 px-[0.625rem] hover:bg-greyFourty rounded-md'
-                >
+                <button className="flex items-center gap-1 py-2 px-[0.625rem] hover:bg-greyFourty rounded-md">
                   Solutions
-
                 </button>
                 {openDropdown === "solutions" && (
                   <div className="absolute top-16 left-1/2 -translate-x-1/2 flex flex-col gap-1 bg-white/80 backdrop-blur-md shadowm-sm border border-greyThirty shadow-sm rounded-xl p-3 w-[450px]">
@@ -188,7 +167,6 @@ const Header = () => {
                         key={solution.title}
                         className="flex gap-4 text-blackFifty border border-red-400 cursor-pointer hover:bg-greyTen rounded-lg p-4 min-h-[90px] transition-all duration-200"
                       >
-            
                         <div className="flex flex-col gap-1 justify-center">
                           <div className="flex items-center justify-between">
                             <h3 className="text-base font-medium">
@@ -208,15 +186,11 @@ const Header = () => {
                 onMouseEnter={() => handleDropdownEnter("products")}
                 onMouseLeave={handleDropdownLeave}
               >
-                <button
-                  className='flex items-center gap-1 py-2 px-[0.625rem] hover:bg-greyFourty rounded-md'
-
-                >
+                <button className="flex items-center gap-1 py-2 px-[0.625rem] hover:bg-greyFourty rounded-md">
                   Products
-  
                 </button>
                 {openDropdown === "products" && (
-                  <div className="absolute top-16 left-0 flex items-start gap-4 shadow-lg bg-white border border-greyThirty rounded-2xl pt-4 px-3 pb-3 w-full max-h-72 md:max-w-2xl xl:max-w-6xl mx-auto">
+                  <div className="absolute top-16 left-0 flex items-start gap-4 shadow-lg bg-white/80 backdrop-blur-md  border border-greyThirty rounded-2xl pt-4 px-3 pb-3 w-full max-h-72 md:max-w-2xl xl:max-w-6xl mx-auto">
                     {products.map((product, index) => (
                       <React.Fragment key={product.title}>
                         <ProductCard {...product} />
@@ -234,10 +208,9 @@ const Header = () => {
               >
                 <button className="flex items-center gap-1 py-2 px-[0.625rem] hover:bg-greyFourty rounded-md">
                   Resources
-       
                 </button>
                 {openDropdown === "resources" && (
-                  <div className="absolute top-16 left-1/2 -translate-x-1/2 flex gap-4 bg-white border border-greyThirty shadow-lg rounded-2xl p-4 w-[680px] h-80">
+                  <div className="absolute top-16 left-1/2 -translate-x-1/2 flex gap-4 bg-white/80 backdrop-blur-md  border border-greyThirty shadow-lg rounded-2xl p-4 w-[680px] h-80">
                     <div className="flex flex-col items-start gap-1 text-base font-medium text-blackFifty min-w-[160px]">
                       {resources.map((resource, idx) => (
                         <ResourceBtn
@@ -302,15 +275,12 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <a
-       
-                className="hover:bg-greyFourty rounded-md py-2 px-[0.625rem]"
-              >
+              <a className="hover:bg-greyFourty rounded-md py-2 px-[0.625rem]">
                 Pricing
               </a>
             </div>
             <div className="flex-1 flex justify-end">
-            <button>Book a Demo</button>
+              <button>Book a Demo</button>
             </div>
           </nav>
           <div className="flex md:hidden items-center">
@@ -337,6 +307,6 @@ const Header = () => {
         </div>
       </header>
     </div>
-  )
-}
-export default Header
+  );
+};
+export default Header;
